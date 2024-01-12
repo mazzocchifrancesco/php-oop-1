@@ -9,12 +9,15 @@
 
 <body>
     <?php
+    // importo file array 
+
     require __DIR__ . '/Models/movies.php';
+    require 'dati.php';
 
-    $gladiator = new Movie("Gladiator", 2000, "Ridley Scott", 8);
-    $the_last_samurai = new Movie("The Last Samurai", 2003, " Edward Zwick", 10);
 
-    var_dump($gladiator);
+    //stampo i dati
+
+    var_dump($movies);
     echo $gladiator->getFullInfo() . "<br>";
     echo $the_last_samurai->getFullInfo() . "<br>";
 
